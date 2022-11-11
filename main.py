@@ -11,11 +11,11 @@ start_date ='2020-12-13'
 city = '北京'
 birthday = '12-17'
 
-app_id = os.environ["APP_ID"]
-app_secret = os.environ["APP_SECRET"]
+app_id = "wx3d3287c20f6f470a"
+app_secret = "0939e4b6ca248c4e0d28f36679ca379a"
 
-user_id = os.environ["USER_ID"]
-template_id = os.environ["TEMPLATE_ID"]
+user_id = "gh_03acb19cee35"
+template_id = "gEKsOIMPnxRq8rzxVpcr8LcdbmPqjxM8wVSnmeygzWc"
 
 
 def get_weather():
