@@ -14,7 +14,7 @@ birthday = '12-17'
 app_id = "wx3d3287c20f6f470a"
 app_secret = "0939e4b6ca248c4e0d28f36679ca379a"
 
-user_id = "gh_03acb19cee35"
+user_id = "o_TZC5xfhejTsOWvV-k2_mKBAnrc"
 template_id = "gEKsOIMPnxRq8rzxVpcr8LcdbmPqjxM8wVSnmeygzWc"
 
 
