@@ -115,7 +115,7 @@ data = {
   },
   
   "love_days":{
-    "value":get_count()，
+    "value":get_count(),
     "color":get_random_color()
   }，
 
