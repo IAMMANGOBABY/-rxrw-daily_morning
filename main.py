@@ -126,7 +126,7 @@ data = {
   },
 
   "birthday_left": {
-    "value": get_birthday_left(),
+    "value": get_birthday(),
     "color": get_random_color()
   },
   
