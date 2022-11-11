@@ -27,12 +27,18 @@ def get_week_day():
   week_day = week_list[datetime.date(today).weekday()]
   return week_day
 
-#获取天气
+# weather 直接返回对象，在使用的地方用字段进行调用。
 def get_weather():
+  if city is None:
+    print('请设置城市')
+    return None
   url = "http://autodev.openspeech.cn/csp/api/v2.1/weather?openId=aiuicus&clientType=android&sign=android&city=" + city
   res = requests.get(url).json()
+  if res is None:
+    return None
   weather = res['data']['list'][0]
-  return weather['weather'], math.floor(weather['temp'])
+  return weather
+
 
 #纪念日
 def get_count():
