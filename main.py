@@ -84,16 +84,13 @@ wm = WeChatMessage(client)
 weather = get_weather()
 data = {
   "city": {
-    "value": city,
-    "color": get_random_color()
+    "value": city
   },
   "date": {
-    "value": today.strftime('%Y年%m月%d日'),
-    "color": get_random_color()
+    "value": today.strftime('%Y年%m月%d日')
   },
   "week_day": {
-    "value": get_week_day(),
-    "color": get_random_color()
+    "value": get_week_day()
   },
   "weather": {
     "value": weather['weather'],
