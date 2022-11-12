@@ -13,12 +13,13 @@ today = datetime.strptime(str(nowtime.date()), "%Y-%m-%d") #今天的日期
 start_date ='2020-12-13'
 city = '北京'
 birthday = '12-17'
+birthday_jia = '04-23'
 
 app_id = "wx3d3287c20f6f470a"
 app_secret = "0939e4b6ca248c4e0d28f36679ca379a"
 
-user_id = "o_TZC5wJ6RfAKFT5TpXD0cYNnVu8"
-template_id = "ZYLYUTIJfnWcnuwP0Tgyn8yXoUpL5BW6latlyOTmnbI"
+user_id = "o_TZC5xfhejTsOWvV-k2_mKBAnrc"
+template_id = "sAwepMFw66cvAXFVrb2v5Cdf3mr0YkEE0a81RBmuSBw"
 
 
 # 获取当前日期为星期几
@@ -46,7 +47,7 @@ def get_count():
   return delta.days
 
 #生日倒计时
-def get_birthday():
+def get_birthday(birthday):
   next = datetime.strptime(str(date.today().year) + "-" + birthday, "%Y-%m-%d")
   if next < datetime.now():
     next = next.replace(year=next.year + 1)
@@ -102,6 +103,11 @@ data = {
     "value": weather['humidity'],
     "color": get_random_color()
   },
+  
+  "wind": {
+    "value": weather['wind'],
+    "color": get_random_color()
+  },
 
   "air_quality": {
     "value": weather['airQuality'],
@@ -126,7 +132,12 @@ data = {
   },
 
   "birthday_left": {
-    "value": get_birthday(),
+    "value": get_birthday(birthday),
+    "color": get_random_color()
+  },
+  
+  "birthday_left_jia": {
+    "value": get_birthday(birthday_jia),
     "color": get_random_color()
   },
   
