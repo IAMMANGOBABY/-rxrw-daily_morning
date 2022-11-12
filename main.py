@@ -93,34 +93,27 @@ data = {
     "value": get_week_day()
   },
   "weather": {
-    "value": weather['weather'],
-    "color": get_random_color()
+    "value": weather['weather']
   },
   "humidity": {
-    "value": weather['humidity'],
-    "color": get_random_color()
+    "value": weather['humidity']
   },
   
   "wind": {
-    "value": weather['wind'],
-    "color": get_random_color()
+    "value": weather['wind']
   },
 
   "air_quality": {
-    "value": weather['airQuality'],
-    "color": get_random_color()
+    "value": weather['airQuality']
   },
   "temperature": {
-    "value": math.floor(weather['temp']),
-    "color": get_random_color()
+    "value": math.floor(weather['temp'])
   },
   "highest": {
-    "value": math.floor(weather['high']),
-    "color": get_random_color()
+    "value": math.floor(weather['high'])
   },
   "lowest": {
-    "value": math.floor(weather['low']),
-    "color": get_random_color()
+    "value": math.floor(weather['low'])
   },
   
   "love_days":{
