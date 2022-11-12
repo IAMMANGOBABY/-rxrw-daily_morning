@@ -18,7 +18,7 @@ birthday_jia = '04-23'
 app_id = "wx3d3287c20f6f470a"
 app_secret = "0939e4b6ca248c4e0d28f36679ca379a"
 
-user_id = "o_TZC5xfhejTsOWvV-k2_mKBAnrc"
+user_id = "o_TZC5wJ6RfAKFT5TpXD0cYNnVu8"
 template_id = "sAwepMFw66cvAXFVrb2v5Cdf3mr0YkEE0a81RBmuSBw"
 
 
